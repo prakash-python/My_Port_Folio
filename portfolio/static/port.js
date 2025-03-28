@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded',function(){
                                 <a href='https://github.com/prakash-python/python_mysql_bank_project'>Bank Management System</a>
                             </div>
                             <div class='p_sub'>
-                                <a href='https://prakashkumarpython.pythonanywhere.com/'>Mail Sending </a>
+                                <a href='https://github.com/prakash-python/Mail_to_Students'>Mail Sending </a>
                             </div>
                         </div>
                     </div>
