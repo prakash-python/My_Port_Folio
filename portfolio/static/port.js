@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 
                     <marquee id='mar1'>
                         
-                        <p><a href='https://goo.gl/maps/jxhx8Bho8PiQJUBa6?g_st=aw/'><img  src="https://hips.hearstapps.com/hmg-prod/images/west-virginia-gray-cottage-64dd6bb056057.jpg?crop=0.943xw:0.817xh;0.0224xw,0.0932xh&resize=980:*" alt='image not found' width:40px height=25px >
+                        <p><a href='https://goo.gl/maps/jxhx8Bho8PiQJUBa6?g_st=aw/'><img  src="https://www.home-interiors.in/wp-content/uploads/2024/11/Slop-Roof-3400-1.jpg" alt='image not found' width:40px height=25px >
                         <span style=' margin-bottom:10px;'>Reddy's ramalayam back side main road Prathipadu (m),Guntur (dt).
                         </span></a></p>
                         
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded',function(){
                                 <a href='https://github.com/prakash-python/Python_Veg_Inventory'>Veg Mart Inventory</a>
                             </div>
                             <div class='p_sub'>
-                                <a href=''>Port_Folio</a>
+                                <a href='https://prakashkumarpython.pythonanywhere.com/'>Port_Folio</a>
                             </div>
                         </div>
                         <div id='p_right'>
