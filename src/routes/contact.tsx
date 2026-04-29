@@ -30,7 +30,7 @@ const channels = [
     icon: FileText,
     label: "Resume",
     value: "Download PDF",
-    href: "/prakashkumarresumeex.pdf",
+    href: "/Prakash_Kumar_resume.pdf",
   },
 ];
 

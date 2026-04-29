@@ -73,7 +73,7 @@ export function SiteNav() {
                 <DialogDescription>Review my qualifications and experience.</DialogDescription>
               </div>
               <a 
-                href="/prakashkumarresumeex.pdf" 
+                href="/Prakash_Kumar_resume.pdf" 
                 download
                 title="Download Resume"
                 className="hidden sm:flex items-center justify-center p-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors mr-6"
@@ -83,7 +83,7 @@ export function SiteNav() {
             </DialogHeader>
             <div className="flex-1 bg-muted/10 relative">
               <iframe 
-                src="/prakashkumarresumeex.pdf#toolbar=0" 
+                src="/Prakash_Kumar_resume.pdf#toolbar=0" 
                 className="absolute inset-0 w-full h-full border-0"
                 title="Prakash Kumar Daram Resume"
               />
