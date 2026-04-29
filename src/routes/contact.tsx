@@ -92,7 +92,7 @@ export default function Contact() {
             c.label === "Resume" ? (
               <Dialog key={c.label}>
                 <DialogTrigger asChild>
-                  <button className="card-elevated rounded-2xl p-6 flex items-center gap-4 group min-w-0 text-left w-full">
+                  <button className="card-elevated rounded-2xl p-6 flex items-center cursor-pointer gap-4 group min-w-0 text-left w-full">
                     <span className="shrink-0 grid place-items-center h-12 w-12 rounded-xl bg-primary/10 text-primary border border-primary/20 group-hover:scale-110 transition-transform">
                       <c.icon size={20} />
                     </span>
