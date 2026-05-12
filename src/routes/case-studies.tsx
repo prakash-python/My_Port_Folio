@@ -14,6 +14,7 @@ const studies = [
       ["Webhook Callback", "Robust background delivery with exponential backoff retries to guarantee result delivery to the main LOS."],
       ["Concurrency Locks", "PostgreSQL select_for_update locks prevent duplicate Celery workers from racing on the same job."],
     ],
+    githubUrl: "https://github.com/prakash-python/AutoDoc-Validator", // Assuming standard naming
   },
   {
     n: "02",
@@ -28,6 +29,23 @@ const studies = [
       ["Integrations", "API boundaries to live CIBIL bureau APIs, AWS/Azure Blob storage, and the standalone AutoDoc Validator service."],
       ["Fuzzy Matching", "FuzzyWuzzy for intelligent matching of entered company names against the employer master list."],
     ],
+    githubUrl: "https://github.com/prakash-python/Insta-EMI-Backend", // Assuming standard naming
+  },
+  {
+    n: "03",
+    title: "HireLoop AI - Enterprise Job Board Platform",
+    sub: "Full-Stack Job Portal",
+    stack: ["React", "Django DRF", "PostgreSQL", "JWT", "Vercel", "Render"],
+    problem: "Modern job boards need to handle complex dual-role workflows (seekers vs employers) while maintaining high performance and security for sensitive data like resumes.",
+    solution: "A production-ready platform with dual-role RBAC, secure PDF resume viewing, and background processing for heavy operations like automated email status updates.",
+    contributions: [
+      ["Dual-Role RBAC", "Implemented sophisticated role-based access control to distinguish seeker workflows from employer ATS dashboards."],
+      ["Secure Resume Vault", "Engineered authenticated media endpoints with iframe-safe embedding for secure, in-browser PDF viewing."],
+      ["Performance Tuning", "Resolved API registration bottlenecks by transitioning synchronous operations to background thread execution."],
+      ["CI/CD Orchestration", "Established a dual-platform deployment pipeline with automated builds for both React and Django services."],
+    ],
+    liveUrl: "https://job-board-ai-assessment.vercel.app",
+    githubUrl: "https://github.com/prakash-python/job-board-ai-assessment",
   },
 ];
 
@@ -56,10 +74,22 @@ export default function CaseStudies() {
                 <h3 className="text-2xl md:text-3xl font-bold tracking-tight mt-1">{s.title}</h3>
                 <p className="text-muted-foreground mt-1">{s.sub}</p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 items-center">
                 {s.stack.map((t) => (
                   <span key={t} className="text-xs font-mono px-2.5 py-1 rounded-md bg-secondary/60 border border-[var(--hairline)] text-muted-foreground">{t}</span>
                 ))}
+                <div className="flex items-center gap-2 ml-2 pl-2 border-l border-[var(--hairline)]">
+                  {s.liveUrl && (
+                    <a href={s.liveUrl} target="_blank" rel="noreferrer" className="p-1.5 rounded-md hover:bg-primary/10 text-muted-foreground hover:text-primary transition" title="Live Demo">
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
+                  {s.githubUrl && (
+                    <a href={s.githubUrl} target="_blank" rel="noreferrer" className="p-1.5 rounded-md hover:bg-primary/10 text-muted-foreground hover:text-primary transition" title="GitHub Repository">
+                      <Github size={16} />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
 
