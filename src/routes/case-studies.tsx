@@ -62,7 +62,7 @@ export default function CaseStudies() {
       <SectionHeader
         eyebrow="Case studies"
         title="Production systems I've engineered"
-        description="Two deep dives into the platforms behind the scenes — and a few side projects worth showing."
+        description="Deep dives into production platforms — along with independent systems and side projects engineered outside company work."
       />
 
       <div className="space-y-8">
@@ -120,7 +120,107 @@ export default function CaseStudies() {
       </div>
 
       <div className="mt-16">
-        <h3 className="text-2xl font-bold mb-6">Other featured projects</h3>
+        <div className="mb-8">
+          <span className="chip mb-3">Self Project / Independent System</span>
+          <h3 className="text-2xl md:text-3xl font-bold tracking-tight">Other featured projects</h3>
+          <p className="text-sm md:text-base text-muted-foreground mt-1">
+            Personal vault and side projects engineered outside of company work.
+          </p>
+        </div>
+
+        {/* Featured Self-Project Card: Life OS */}
+        <article className="card-elevated rounded-3xl p-8 md:p-10 mb-8 border border-primary/20">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-mono text-xs px-2.5 py-0.5 rounded-full bg-primary/15 text-primary border border-primary/30 font-semibold">
+                  SELF PROJECT
+                </span>
+                <span className="text-xs font-mono text-muted-foreground">Personal Vault &amp; Tracker</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold tracking-tight mt-2">
+                Life OS — Personal Vault
+              </h3>
+              <p className="text-muted-foreground mt-1">
+                Full-Stack Personal Life, Finance &amp; Asset Management Platform
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2 items-center">
+              {[
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Django DRF",
+                "PostgreSQL",
+                "SimpleJWT",
+                "Vercel",
+                "Render",
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="text-xs font-mono px-2.5 py-1 rounded-md bg-secondary/60 border border-[var(--hairline)] text-muted-foreground"
+                >
+                  {t}
+                </span>
+              ))}
+              <div className="flex items-center gap-2 ml-2 pl-2 border-l border-[var(--hairline)]">
+                <a
+                  href="https://life-os-personal-vault.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition shadow-sm"
+                  title="Live App"
+                >
+                  <span>Live App</span>
+                  <ExternalLink size={14} />
+                </a>
+                <a
+                  href="https://github.com/prakash-python/life-os"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="p-1.5 rounded-md hover:bg-primary/10 text-muted-foreground hover:text-primary transition"
+                  title="GitHub Repository"
+                >
+                  <Github size={16} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h4 className="text-xs font-mono uppercase tracking-wider text-primary mb-2">The Motivation</h4>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Off-the-shelf finance trackers are fragmented, rigid, and often compromise data privacy. I needed a centralized, private system to manage day-to-day cash flows, assets, financial goals, and net worth calculations with full control over the data layer.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-mono uppercase tracking-wider text-primary mb-2">The Solution</h4>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Architected and deployed a multi-app Django REST backend paired with a responsive React (Vite + TypeScript) interface. Features JWT authentication, categorized income/expense records, goal milestone tracking, asset valuation, and a resilient soft-delete audit vault.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h4 className="text-xs font-mono uppercase tracking-wider text-primary mb-4">Key Features &amp; Implementation</h4>
+            <div className="grid md:grid-cols-2 gap-3">
+              {[
+                ["Modular Domain Separation", "Segregated into 6 independent Django apps (finances, assets, goals, analytics, trash, authentication) keeping API endpoints clean and maintainable."],
+                ["Financial & Asset Management", "Real-time calculation of net worth, categorized expenses, and income logs with date filters and summaries."],
+                ["Goal Milestones & Targets", "Interactive goal tracking with target amounts, contribution history, and progress visualizations."],
+                ["Soft-Delete & Trash Vault", "Reversible soft-delete architecture ensuring accidental removals can be audited and restored effortlessly."],
+              ].map(([k, v]) => (
+                <div key={k} className="rounded-xl border border-[var(--hairline)] bg-background/40 p-4">
+                  <p className="font-semibold text-sm">{k}</p>
+                  <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{v}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </article>
+
+        <h4 className="text-sm font-mono uppercase tracking-wider text-muted-foreground mb-4">More side projects &amp; utilities</h4>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {others.map((o) => (
             <a key={o.name} href={o.url} target="_blank" rel="noreferrer" className="card-elevated rounded-xl p-5 group flex items-center justify-between">
