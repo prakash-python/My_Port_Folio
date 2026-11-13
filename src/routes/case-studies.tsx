@@ -3,6 +3,20 @@ import { ExternalLink, Github } from "lucide-react";
 const studies = [
   {
     n: "01",
+    title: "MMPortal Enterprise Modernization & Cron Orchestration",
+    sub: "Internal Operations Platform • MediaMint",
+    stack: ["Python 3.12", "Django 5.2", "MySQL 8.4", "GitLab CI", "Snipe-IT", "Google Sheets API"],
+    problem: "A high-traffic legacy Python 2.7 / Django 1.8 internal enterprise portal suffered from deprecated syntax, broken cron jobs, and unpatched security vulnerabilities following environment upgrades.",
+    solution: "Modernized the core platform to Python 3.12 and Django 5.2 with zero operational downtime, engineered an isolated Cron Manager backend with execution guards, and built automated third-party sync pipelines.",
+    contributions: [
+      ["Framework Modernization", "Delivered 49 peer-reviewed PRs and 111 commits in 16 days, resolving critical regressions across 15+ business modules."],
+      ["Cron Manager Engine", "Architected dedicated models, services, and REST APIs for scheduled jobs with once-a-day guards and safe retry policies."],
+      ["Asset Management Integration", "Integrated Snipe-IT API to automatically synchronize employee lifecycle changes and user inactivation."],
+      ["Sub-Billing-Type Architecture", "Engineered end-to-end sub-billing types with dynamic options APIs, data exports, and audit validation."],
+    ],
+  },
+  {
+    n: "02",
     title: "AI-Powered Document Intelligence Microservice",
     sub: "AutoDoc-Validator",
     stack: ["Python", "Django DRF", "Celery", "Redis", "PaddleOCR", "OpenAI"],
@@ -17,7 +31,7 @@ const studies = [
     githubUrl: "https://github.com/prakash-python/AutoDoc-Validator", // Assuming standard naming
   },
   {
-    n: "02",
+    n: "03",
     title: "Insta EMI Core Backend",
     sub: "Loan Origination System",
     stack: ["Django", "PostgreSQL", "Celery", "JWT", "AES-256", "Groq API"],
@@ -32,7 +46,7 @@ const studies = [
     githubUrl: "https://github.com/prakash-python/Insta-EMI-Backend", // Assuming standard naming
   },
   {
-    n: "03",
+    n: "04",
     title: "HireLoop AI - Enterprise Job Board Platform",
     sub: "Full-Stack Job Portal",
     stack: ["React", "Django DRF", "PostgreSQL", "JWT", "Vercel", "Render"],

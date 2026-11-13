@@ -2,11 +2,12 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 const groups: { title: string; items: string[] }[] = [
   { title: "Backend & API", items: ["Python", "Django", "Django REST Framework", "Node.js"] },
-  { title: "Async & Systems", items: ["Celery", "Redis", "Webhooks", "JWT Auth", "Uvicorn / ASGI"] },
+  { title: "Async & Systems", items: ["Celery", "Redis", "Cron Orchestration", "Webhooks", "JWT Auth", "Uvicorn / ASGI"] },
   { title: "AI & Processing", items: ["OpenAI API", "Groq API", "PaddleOCR", "PyMuPDF", "Prompt Engineering"] },
-  { title: "Database & Data Layer", items: ["PostgreSQL", "MySQL", "Prisma ORM", "Django ORM"] },
+  { title: "Integrations & APIs", items: ["Snipe-IT API", "Google Sheets API", "CIBIL API", "RESTful Webhooks"] },
+  { title: "Database & Data Layer", items: ["PostgreSQL", "MySQL 8.4", "Prisma ORM", "Django ORM"] },
   { title: "Frontend", items: ["HTML & CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "Bootstrap"] },
-  { title: "Infrastructure", items: ["Git & GitHub", "Azure Blob Storage", "Linux / Bash", "Supervisor"] },
+  { title: "Infrastructure", items: ["Git & GitHub", "GitLab CI", "Azure Blob Storage", "Linux / Bash", "Supervisor"] },
   { title: "Soft Skills", items: ["Communication", "Problem Solving", "Analytical Reasoning", "Aptitude"] },
 ];
 

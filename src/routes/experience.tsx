@@ -2,9 +2,21 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { GraduationCap, Briefcase } from "lucide-react";
 const jobs = [
   {
-    role: "Backend Software Engineer",
-    company: "Viprata Technologies",
-    period: "Apr 2025 — Present",
+    role: "Junior Python Developer",
+    company: "MediaMint (Vuchi Media Pvt Ltd)",
+    period: "May 2026 — Present",
+    points: [
+      "Modernized MMPortal internal enterprise platform from legacy Python 2.7 / Django 1.8 to Python 3.12 / Django 5.2 and MySQL 8.4, delivering 49 merged PRs and 111 commits in 16 days.",
+      "Architected and built the Cron Manager backend (models, repositories, services, REST APIs) with once-a-day execution guards, failure reporting, and automated worker restart lifecycles.",
+      "Engineered the Sub-Billing-Type module end-to-end: validation rules, options API for logged-in users, reports export pipelines, and billing management views.",
+      "Integrated Snipe-IT IT asset management for automated user-inactivation synchronization across the platform.",
+      "Built Google Sheets master-data export APIs and patched critical security vulnerabilities (including the Pillow advisory PYSEC-2026-4363).",
+    ],
+  },
+  {
+    role: "Software Engineer",
+    company: "Viprata Software Services Pvt Ltd",
+    period: "Apr 2025 — May 2026",
     points: [
       "Designed and developed scalable Django REST architectures for financial platforms.",
       "Integrated CIBIL APIs, implemented JWT auth and built secure end-to-end workflows.",
